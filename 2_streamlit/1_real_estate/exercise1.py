@@ -14,7 +14,10 @@ FILE = (
 )
 df = pd.read_csv(FILE, compression="gzip", low_memory=False)
 
-street_name = st.text_input("Filter by street name", "")
+df = load_data()
+###IMPORTANT FOR THE CACHING PART
+street_name = st.text_input("Filter by street name", "", key='street_name', on_change=st.write(f"User \
+                            has filtered by street"))
 
 if street_name:
     df.dropna(subset=["adresse_nom_voie"], inplace=True)
