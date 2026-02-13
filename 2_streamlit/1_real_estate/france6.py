@@ -9,6 +9,7 @@ import streamlit as st
 
 st.title("Real estate prices in France")
 
+# Alternatively, you can also use the "with" syntax
 year = st.sidebar.selectbox(
     "Year to display:",
     [2020, 2021, 2022, 2023, 2024]
