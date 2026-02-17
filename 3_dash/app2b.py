@@ -79,16 +79,16 @@ def update_output(value):
 # Exercise: Add a callback to update the map
 # when the year is changed
 # Hint: You can use the get_map function
-# @callback(
-#     Output(________, ________),
-#     Input(________, ________)
-# )
-# def update_map(__________):
-#     """Update the map with the data for the selected year."""
-#     fname = get_file(_________)
-#     df = prepare_data(__________)
-#     map = __________________
-#     return ___________
+@callback(
+     Output('map', 'figure'),
+     Input('year-dd', 'value')
+ )
+def update_map(value):
+     """Update the map with the data for the selected year."""
+     fname = get_file(value)
+     df = prepare_data(fname)
+     map = get_map(df)
+     return map
 
 
 # The main function should call the run method
