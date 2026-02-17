@@ -6,3 +6,5 @@ matplotlib
 watchdog
 geopy
 pylint
+dash
+dash_bootstrap_components

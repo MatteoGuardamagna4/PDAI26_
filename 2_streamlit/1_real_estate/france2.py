@@ -2,7 +2,6 @@
 This is the second step of the Streamlit tutorial.
 We will add basic interactivity through a checkbox
 """
-
 import pandas as pd
 import streamlit as st
 
