@@ -5,7 +5,7 @@
 - `2_streamlit`: Scripts for the `streamlit` demos.
 - `3_dash`: Scripts for the `dash` demos.
 - `4_llms`: Examples of using LLMs for various tasks (single-call).
-- 5_llms`: Examples of using LLMs for various tasks (multi-call).
+- `5_llms`: Examples of using LLMs for various tasks (multi-call).
 - `7_llms3`: Example of tool-calling application, RAG and an on-premise LLM. 
 
 ## Cloning the repository
